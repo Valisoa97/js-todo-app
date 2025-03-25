@@ -7,26 +7,33 @@ export class Task {
   }
 }
 
-export const TaskManager = {
-  tasks: [],
-  addTask(task) {
+export class TaskManager {
+  static tasks = [
+    ...Array.from({ length: 10 }, (_, i) => new Task(TaskManager.generateId(), `Task ${i + 1}`)),
+  ]
+
+  static addTask(task) {
     this.tasks.push(task)
-  },
-  removeTask(id) {
+  }
+
+  static removeTask(id) {
     this.tasks = this.tasks.filter(task => task.id !== id)
-  },
-  getTasks(sort = "desc") {
+  }
+
+  static getTasks(sort = "desc") {
     if (sort === "asc") {
       return this.tasks.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
     } else if (sort === "desc") {
       return this.tasks.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
     }
     return this.tasks
-  },
-  generateId() {
+  }
+
+  static generateId() {
     return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
-  },
-  deleteTask(id) {
+  }
+
+  static deleteTask(id) {
     this.tasks = this.tasks.filter(task => task.id !== id)
-  },
+  }
 }
