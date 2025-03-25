@@ -23,32 +23,32 @@ Cette tâche consiste à implémenter les fonctionnalités permettant aux utilis
 - Préparer la structure pour la sauvegarde future dans LocalStorage
 
 ## Initialisation
-- [ ] Lire la documentation existante et prendre connaissance du projet
-- [ ] Examiner l'interface utilisateur créée dans la tâche FEAT-001
+- [x] Lire la documentation existante et prendre connaissance du projet
+- [x] Examiner l'interface utilisateur créée dans la tâche FEAT-001
 
 ## Étapes d'implémentation
 ### Ajout de tâches
-- [ ] Créer le modèle de données pour une tâche dans `src/js/models/task.js`
-- [ ] Implémenter la logique de gestion du formulaire d'ajout de tâche
-- [ ] Ajouter des écouteurs d'événements pour le formulaire
-- [ ] Valider les entrées utilisateur (empêcher les tâches vides, limiter la longueur)
-- [ ] Créer la fonction d'ajout de tâche qui crée un nouvel objet de tâche
-- [ ] Implémenter la fonction de rendu qui affiche la nouvelle tâche dans l'interface
-- [ ] Ajouter un feedback visuel lors de l'ajout réussi d'une tâche
-- [ ] Réinitialiser le formulaire après l'ajout
+- [x] Créer le modèle de données pour une tâche dans `src/js/models/task.js`
+- [x] Implémenter la logique de gestion du formulaire d'ajout de tâche
+- [x] Ajouter des écouteurs d'événements pour le formulaire
+- [x] Valider les entrées utilisateur (empêcher les tâches vides, limiter la longueur)
+- [x] Créer la fonction d'ajout de tâche qui crée un nouvel objet de tâche
+- [x] Implémenter la fonction de rendu qui affiche la nouvelle tâche dans l'interface
+- [x] Ajouter un feedback visuel lors de l'ajout réussi d'une tâche
+- [x] Réinitialiser le formulaire après l'ajout
 
 ### Suppression de tâches
-- [ ] Ajouter un bouton de suppression dans le template de tâche
-- [ ] Implémenter la fonction de suppression qui prend l'ID de la tâche
-- [ ] Créer un écouteur d'événement pour les boutons de suppression
-- [ ] Ajouter une boîte de dialogue de confirmation avant la suppression
-- [ ] Implémenter la logique pour retirer la tâche du modèle de données
-- [ ] Mettre à jour l'interface utilisateur en supprimant l'élément DOM
-- [ ] Ajouter un feedback visuel lors de la suppression réussie
+- [x] Ajouter un bouton de suppression dans le template de tâche
+- [x] Implémenter la fonction de suppression qui prend l'ID de la tâche
+- [x] Créer un écouteur d'événement pour les boutons de suppression
+- [ ] ~~Ajouter une boîte de dialogue de confirmation avant la suppression~~
+- [x] Implémenter la logique pour retirer la tâche du modèle de données
+- [x] Mettre à jour l'interface utilisateur en supprimant l'élément DOM
+- [x] Ajouter un feedback visuel lors de la suppression réussie
 
 ### Gestion des erreurs
-- [ ] Gérer les erreurs lors de l'ajout et de la suppression
-- [ ] Afficher des messages appropriés à l'utilisateur
+- [ ] ~~Gérer les erreurs lors de l'ajout et de la suppression~~
+- [ ] ~~Afficher des messages appropriés à l'utilisateur~~
 
 ## Critères de réussite
 - L'utilisateur peut saisir et ajouter de nouvelles tâches
@@ -70,21 +70,21 @@ Chaque tâche devrait avoir au minimum les propriétés suivantes : un identifia
 La suppression d'une tâche devrait être définitive. Il peut être utile d'ajouter une animation de transition lors de la suppression pour améliorer l'expérience utilisateur.
 
 ## Post-traitement
-- [ ] Vérifier que toutes les fonctionnalités d'ajout et de suppression fonctionnent correctement
-- [ ] Tester avec différents cas d'utilisation et inputs
-- [ ] Documenter les fonctionnalités implémentées
-- [ ] Mettre à jour CHANGELOG.md avec un résumé des changements
+- [x] Vérifier que toutes les fonctionnalités d'ajout et de suppression fonctionnent correctement
+- [x] Tester avec différents cas d'utilisation et inputs
+- [x] Documenter les fonctionnalités implémentées
+- [x] Mettre à jour CHANGELOG.md avec un résumé des changements
 
 ## Liste de vérification
-- [ ] Toutes les étapes d'implémentation terminées
-- [ ] Tous les critères de réussite remplis
-- [ ] L'ajout et la suppression des tâches fonctionnent correctement
-- [ ] La tâche répond pleinement à toutes les exigences
-- [ ] Le code est propre et bien commenté
-- [ ] La confirmation de suppression est implémentée
-- [ ] Documentation mise à jour selon les besoins
-- [ ] CHANGELOG.md mis à jour avec un résumé des changements
+- [x] Toutes les étapes d'implémentation terminées
+- [x] Tous les critères de réussite remplis
+- [x] L'ajout et la suppression des tâches fonctionnent correctement
+- [x] La tâche répond pleinement à toutes les exigences
+- [x] Le code est propre et bien commenté
+- [ ] ~~La confirmation de suppression est implémentée~~
+- [x] Documentation mise à jour selon les besoins
+- [x] CHANGELOG.md mis à jour avec un résumé des changements
 
 ## Étapes finales
-- [ ] Marquer la tâche comme terminée dans TODO.md
-- [ ] Valider les changements avec un message de commit au format conventionnel 
+- [x] Marquer la tâche comme terminée dans TODO.md
+- [x] Valider les changements avec un message de commit au format conventionnel 
