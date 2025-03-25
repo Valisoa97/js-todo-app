@@ -17,67 +17,13 @@
     <div class="max-w-[750px] mx-auto">
       <h1 class="text-h1 text-center uppercase mb-5">Todo list</h1>
     </div>
+    <img
+      src="src/assets/images/empty-task.png"
+      alt="empty list"
+      class="empty-task-image w-full max-w-[221px] mx-auto mt-5"
+    />
     <ul id="todo-list" class="max-w-[520px] mx-auto mt-5 list-none flex flex-col gap-3">
-      <li class="flex items-center pb-3 mb-2 border-b border-[#6C63FF]">
-        <div class="checkbox-container mr-3 cursor-pointer">
-          <input type="checkbox" id="todo-1" class="hidden" />
-          <label for="todo-1" class="block w-6 h-6 cursor-pointer">
-            <img
-              src="src/assets/svg/checkbox-unchecked.svg"
-              class="checkbox-unchecked"
-              alt="Unchecked"
-            />
-            <img
-              src="src/assets/svg/checkbox-checked.svg"
-              class="checkbox-checked hidden"
-              alt="Checked"
-            />
-          </label>
-        </div>
-        <label for="todo-1" class="text-xl font-medium cursor-pointer">
-          Buy groceries for the week
-        </label>
-      </li>
-      <li class="flex items-center pb-3 mb-2 border-b border-[#6C63FF]">
-        <div class="checkbox-container mr-3 cursor-pointer">
-          <input type="checkbox" id="todo-2" class="hidden" />
-          <label for="todo-2" class="block w-6 h-6 cursor-pointer">
-            <img
-              src="src/assets/svg/checkbox-unchecked.svg"
-              class="checkbox-unchecked"
-              alt="Unchecked"
-            />
-            <img
-              src="src/assets/svg/checkbox-checked.svg"
-              class="checkbox-checked hidden"
-              alt="Checked"
-            />
-          </label>
-        </div>
-        <label for="todo-2" class="text-xl font-medium cursor-pointer">
-          Schedule dentist appointment
-        </label>
-      </li>
-      <li class="flex items-center pb-3">
-        <div class="checkbox-container mr-3 cursor-pointer">
-          <input type="checkbox" id="todo-3" class="hidden" />
-          <label for="todo-3" class="block w-6 h-6 cursor-pointer">
-            <img
-              src="src/assets/svg/checkbox-unchecked.svg"
-              class="checkbox-unchecked"
-              alt="Unchecked"
-            />
-            <img
-              src="src/assets/svg/checkbox-checked.svg"
-              class="checkbox-checked hidden"
-              alt="Checked"
-            />
-          </label>
-        </div>
-        <label for="todo-3" class="text-xl font-medium cursor-pointer">
-          Complete project presentation
-        </label>
-      </li>
+      <!-- Tasks will be rendered here -->
     </ul>
     <button
       id="open-popup-btn"
