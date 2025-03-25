@@ -30,12 +30,38 @@ function createTask() {
   const newTask = new Task(TaskManager.generateId(), title)
   TaskManager.addTask(newTask)
   closePopup()
-  renderTasks()
+
+  // Add single task to DOM instead of redrawing everything
+  if (TaskManager.getTasks().length === 1) {
+    // First task - hide empty image
+    emptyTaskImage.style.display = "none"
+  }
+
+  const taskElement = document.createElement("div")
+  taskElement.innerHTML = templateTask(newTask)
+  todoList.appendChild(taskElement.firstElementChild)
 }
 
 function deleteTask(taskId) {
-  TaskManager.deleteTask(taskId)
-  renderTasks()
+  // Remove the task from DOM with animation
+  const taskElement = document.getElementById(`task-${taskId}`)
+  if (taskElement) {
+
+    // Add the fade-out animation class
+    taskElement.classList.add("task-deleting")
+
+    // Remove from data model immediately
+    TaskManager.deleteTask(taskId)
+
+    // Wait for animation to complete
+    setTimeout(() => {
+      taskElement.remove()
+      // Show empty state if needed
+      if (TaskManager.getTasks().length === 0) {
+        emptyTaskImage.style.display = "block"
+      }
+    }, 500) // Match the CSS transition duration (500ms)
+  }
 }
 
 function templateTask(task) {
@@ -108,3 +134,6 @@ function setupEventListeners() {
 }
 
 setupEventListeners()
+
+// Initial render of tasks on page load
+renderTasks()
