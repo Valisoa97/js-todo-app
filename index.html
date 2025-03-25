@@ -1,14 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App</title>
+    <meta
+      name="description"
+      content="A simple todo list app built with HTML, CSS, and JavaScript"
+    />
+    <title>My Todo List</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
   </head>
-  <body class="bg-linear-to-r from-cyan-500 to-blue-500">
-    <h1 class="text-3xl font-bold underline ml-2">To Do App</h1>
-    <div class="w-[100px] h-[100px] bg-amber-50 shadow-xl mt-2"></div>
+  <body class="h-screen w-screen py-5 px-10">
+    <div class="max-w-[750px] mx-auto">
+      <h1 class="text-h1 text-center uppercase mb-5">Todo list</h1>
+    </div>
+    <ul id="todo-list" class="max-w-[520px] mx-auto mt-5 list-none flex flex-col gap-3">
+      <li class="flex items-center pb-3 mb-2 border-b border-[#6C63FF]">
+        <div class="checkbox-container mr-3 cursor-pointer">
+          <input type="checkbox" id="todo-1" class="hidden" />
+          <label for="todo-1" class="block w-6 h-6 cursor-pointer">
+            <img
+              src="src/assets/svg/checkbox-unchecked.svg"
+              class="checkbox-unchecked"
+              alt="Unchecked"
+            />
+            <img
+              src="src/assets/svg/checkbox-checked.svg"
+              class="checkbox-checked hidden"
+              alt="Checked"
+            />
+          </label>
+        </div>
+        <label for="todo-1" class="text-xl font-medium cursor-pointer">
+          Buy groceries for the week
+        </label>
+      </li>
+      <li class="flex items-center pb-3 mb-2 border-b border-[#6C63FF]">
+        <div class="checkbox-container mr-3 cursor-pointer">
+          <input type="checkbox" id="todo-2" class="hidden" />
+          <label for="todo-2" class="block w-6 h-6 cursor-pointer">
+            <img
+              src="src/assets/svg/checkbox-unchecked.svg"
+              class="checkbox-unchecked"
+              alt="Unchecked"
+            />
+            <img
+              src="src/assets/svg/checkbox-checked.svg"
+              class="checkbox-checked hidden"
+              alt="Checked"
+            />
+          </label>
+        </div>
+        <label for="todo-2" class="text-xl font-medium cursor-pointer">
+          Schedule dentist appointment
+        </label>
+      </li>
+      <li class="flex items-center pb-3">
+        <div class="checkbox-container mr-3 cursor-pointer">
+          <input type="checkbox" id="todo-3" class="hidden" />
+          <label for="todo-3" class="block w-6 h-6 cursor-pointer">
+            <img
+              src="src/assets/svg/checkbox-unchecked.svg"
+              class="checkbox-unchecked"
+              alt="Unchecked"
+            />
+            <img
+              src="src/assets/svg/checkbox-checked.svg"
+              class="checkbox-checked hidden"
+              alt="Checked"
+            />
+          </label>
+        </div>
+        <label for="todo-3" class="text-xl font-medium cursor-pointer">
+          Complete project presentation
+        </label>
+      </li>
+    </ul>
+    <button
+      id="open-popup-btn"
+      class="absolute bottom-5 right-5 rounded-full bg-primary p-2 text-white cursor-pointer hover:shadow-md"
+    >
+      <img src="src/assets/svg/add.svg" alt="add" />
+    </button>
+    <div
+      id="popup-container"
+      class="fixed inset-0 bg-black/70 backdrop-blur-xs"
+      style="display: none"
+    >
+      <div
+        id="create-form"
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] max-w-[90vw] h-[289px] flex flex-col rounded-2xl bg-white px-10 py-5 shadow-2xl xs:p-5"
+      >
+        <h1 class="text-h1 text-center uppercase mb-5">New note</h1>
+        <input
+          type="text"
+          id="create-input"
+          placeholder="Input your note..."
+          class="w-full font-inter rounded-lg border border-primary px-4 py-2 transition-all duration-200 hover:border-primary/70 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+          autocomplete="off"
+        />
+        <div class="flex justify-between gap-2 mt-auto">
+          <button
+            id="close-popup-btn"
+            class="px-[22px] py-[10px] border border-primary text-primary uppercase cursor-pointer transition-colors duration-200 hover:bg-primary/10 active:bg-primary/20"
+          >
+            Cancel
+          </button>
+          <button
+            id="create-task-btn"
+            class="px-[22px] py-[10px] bg-primary text-white uppercase cursor-pointer hover:bg-opacity-80 hover:shadow-md"
+          >
+            Apply
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="src/js/main.js" type="module"></script>
   </body>
 </html>

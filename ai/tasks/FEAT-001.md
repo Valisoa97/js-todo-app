@@ -19,20 +19,20 @@ Cette tâche consiste à concevoir et implémenter l'interface utilisateur de ba
 - Respecter les bonnes pratiques d'accessibilité web
 
 ## Initialisation
-- [ ] Lire la documentation existante et prendre connaissance du projet
-- [ ] Examiner la structure du projet mise en place dans les tâches précédentes
+- [x] Lire la documentation existante et prendre connaissance du projet
+- [x] Examiner la structure du projet mise en place dans les tâches précédentes
 
 ## Étapes d'implémentation
-- [ ] Définir la structure HTML de base dans index.html
-- [ ] Créer l'en-tête de l'application avec titre et description
-- [ ] Concevoir le formulaire d'ajout de tâches
-- [ ] Créer le conteneur pour la liste des tâches
-- [ ] Concevoir la structure d'un élément de tâche (template)
-- [ ] Implémenter les styles CSS de base dans main.css
-- [ ] Ajouter des styles pour le formulaire et les boutons
-- [ ] Créer des styles pour les éléments de tâche
-- [ ] Implémenter un design responsive avec des media queries
-- [ ] Ajouter des styles pour les états différents (survol, actif, etc.)
+- [x] Définir la structure HTML de base dans index.html
+- [x] Créer l'en-tête de l'application avec titre et description
+- [x] Concevoir le formulaire d'ajout de tâches
+- [x] Créer le conteneur pour la liste des tâches
+- [x] Concevoir la structure d'un élément de tâche (template)
+- [x] Implémenter les styles CSS de base dans main.css
+- [x] Ajouter des styles pour le formulaire et les boutons
+- [x] Créer des styles pour les éléments de tâche
+- [x] Implémenter un design responsive avec des media queries
+- [x] Ajouter des styles pour les états différents (survol, actif, etc.)
 
 ## Critères de réussite
 - L'interface est visuellement attrayante et cohérente
@@ -51,19 +51,19 @@ Cette tâche consiste à concevoir et implémenter l'interface utilisateur de ba
 Le design doit être simple mais moderne, en mettant l'accent sur l'utilisabilité. Nous pouvons nous inspirer des principes de Material Design ou d'autres frameworks d'UI populaires, mais en gardant l'implémentation en CSS pur pour éviter les dépendances externes.
 
 ## Post-traitement
-- [ ] Mettre à jour la documentation du projet pour refléter l'UI créée
-- [ ] Mettre à jour CHANGELOG.md avec un résumé des changements
+- [x] Mettre à jour la documentation du projet pour refléter l'UI créée
+- [x] Mettre à jour CHANGELOG.md avec un résumé des changements
 
 ## Liste de vérification
-- [ ] Toutes les étapes d'implémentation terminées
-- [ ] Tous les critères de réussite remplis
-- [ ] L'interface est visuellement cohérente
-- [ ] La tâche répond pleinement à toutes les exigences
-- [ ] Le code HTML et CSS est valide et bien formaté
-- [ ] Le design est responsive et testé sur différents appareils
-- [ ] Documentation mise à jour selon les besoins
-- [ ] CHANGELOG.md mis à jour avec un résumé des changements
+- [x] Toutes les étapes d'implémentation terminées
+- [x] Tous les critères de réussite remplis
+- [x] L'interface est visuellement cohérente
+- [x] La tâche répond pleinement à toutes les exigences
+- [x] Le code HTML et CSS est valide et bien formaté
+- [x] Le design est responsive et testé sur différents appareils
+- [x] Documentation mise à jour selon les besoins
+- [x] CHANGELOG.md mis à jour avec un résumé des changements
 
 ## Étapes finales
-- [ ] Marquer la tâche comme terminée dans TODO.md
-- [ ] Valider les changements avec un message de commit au format conventionnel 
+- [x] Marquer la tâche comme terminée dans TODO.md
+- [x] Valider les changements avec un message de commit au format conventionnel 
