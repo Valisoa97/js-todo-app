@@ -8,7 +8,7 @@
 
 ## Fonctionnalités Principales
 - [x] [Créer l'interface utilisateur de base (HTML/CSS)](tasks/FEAT-001.md)
-- [ ] [Implémenter l'ajout et la suppression de tâches](tasks/FEAT-002.md)
+- [x] [Implémenter l'ajout et la suppression de tâches](tasks/FEAT-002.md)
 - [ ] [Ajouter la fonctionnalité de marquage des tâches comme complétées](tasks/FEAT-003.md)
 - [ ] [Implémenter l'édition des tâches existantes](tasks/FEAT-004.md)
 
