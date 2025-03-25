@@ -33,6 +33,11 @@ function createTask() {
   renderTasks()
 }
 
+function deleteTask(taskId) {
+  TaskManager.deleteTask(taskId)
+  renderTasks()
+}
+
 function templateTask(task) {
   return `
   <li id="task-${task.id}" class="flex items-center pb-3 mb-2 border-b border-[#6C63FF]">
@@ -54,6 +59,7 @@ function templateTask(task) {
     <label for="todo-${task.id}" class="text-xl font-medium cursor-pointer">
       ${task.title}
     </label>
+    <img class="delete-task-btn ml-auto cursor-pointer" src="src/assets/svg/trash.svg" alt="delete" data-task-id="${task.id}" />
   </li>
   `
 }
@@ -75,6 +81,8 @@ function setupEventListeners() {
   addTaskBtn.addEventListener("click", openPopup)
   closePopupBtn.addEventListener("click", closePopup)
   createTaskBtn.addEventListener("click", createTask)
+
+  // Close popup when clicking outside
   popupContainer.addEventListener("click", event => {
     const createForm = document.getElementById("create-form")
     if (!createForm.contains(event.target) && event.target !== addTaskBtn) {
@@ -88,6 +96,13 @@ function setupEventListeners() {
       createTask()
     } else if (event.key === "Escape") {
       closePopup()
+    }
+  })
+
+  todoList.addEventListener("click", event => {
+    if (event.target.matches(".delete-task-btn")) {
+      const taskId = event.target.dataset.taskId
+      deleteTask(taskId)
     }
   })
 }
