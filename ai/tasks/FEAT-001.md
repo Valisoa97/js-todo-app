@@ -19,18 +19,18 @@ Cette tâche consiste à concevoir et implémenter l'interface utilisateur de ba
 - Respecter les bonnes pratiques d'accessibilité web
 
 ## Initialisation
-- [ ] Lire la documentation existante et prendre connaissance du projet
-- [ ] Examiner la structure du projet mise en place dans les tâches précédentes
+- [x] Lire la documentation existante et prendre connaissance du projet
+- [x] Examiner la structure du projet mise en place dans les tâches précédentes
 
 ## Étapes d'implémentation
-- [ ] Définir la structure HTML de base dans index.html
-- [ ] Créer l'en-tête de l'application avec titre et description
-- [ ] Concevoir le formulaire d'ajout de tâches
-- [ ] Créer le conteneur pour la liste des tâches
-- [ ] Concevoir la structure d'un élément de tâche (template)
-- [ ] Implémenter les styles CSS de base dans main.css
-- [ ] Ajouter des styles pour le formulaire et les boutons
-- [ ] Créer des styles pour les éléments de tâche
+- [x] Définir la structure HTML de base dans index.html
+- [x] Créer l'en-tête de l'application avec titre et description
+- [x] Concevoir le formulaire d'ajout de tâches
+- [x] Créer le conteneur pour la liste des tâches
+- [x] Concevoir la structure d'un élément de tâche (template)
+- [x] Implémenter les styles CSS de base dans main.css
+- [x] Ajouter des styles pour le formulaire et les boutons
+- [x] Créer des styles pour les éléments de tâche
 - [ ] Implémenter un design responsive avec des media queries
 - [ ] Ajouter des styles pour les états différents (survol, actif, etc.)
 
