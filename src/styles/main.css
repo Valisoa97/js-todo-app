@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import "./popup.css";
 body{
   font-family: "Kanit", sans-serif;
   background-color: white;
@@ -13,48 +13,27 @@ text-align: center;
 margin-top: 100px
 }
 .list{
-  width:520px;
-  height: 545px;
+  max-width:500px;
   margin: 0 auto;
   padding: 30px ;
   cursor: pointer;
 }
+
 .list ul {
   list-style: none;
 }
+.list li:not(:last-child) {
+  border-bottom: 1px solid #6C63FF;
+  margin: 10px 0 10px 0;
+}
+
 .list span {
   font-size: 20px;
   text-transform: uppercase;
   margin-left: 10px;
 }
-.divider{
-  border-bottom: 1px solid #6C63FF;
-  margin: 10px 0 10px 0;
-}
-.popup{
-  display: block;
-  position: relative;
-  bottom: 120px;
-  padding: 20px;
-  width: 500px;
-  height: 289px;
-  background-color: white;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-.popup h1 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.popup input{
-  width: 475px;
-  height: 38px;
-  border-radius: 10px;
-  color: #6C63FF;
-  padding-left: 20px;
-  border: 2px solid #6C63FF;
-}
+
+
 .button {
   display: flex;
   justify-content: space-between; 
@@ -79,3 +58,4 @@ margin-top: 100px
   cursor: pointer;
   border: none;
 }
+
