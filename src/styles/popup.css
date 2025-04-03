@@ -1,0 +1,24 @@
+.popup{
+  display: none;
+  position: relative;
+  bottom: 120px;
+  padding: 20px;
+  width: 500px;
+  height: 289px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.popup h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.popup input{
+  width: 475px;
+  height: 38px;
+  border-radius: 10px;
+  color: #6C63FF;
+  padding-left: 20px;
+  border: 2px solid #6C63FF;
+}
